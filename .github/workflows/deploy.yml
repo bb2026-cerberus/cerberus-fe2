@@ -2,7 +2,7 @@ name: Frontend CI/CD with Tailscale
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "deploy" ]
   workflow_dispatch:
 
 jobs:
