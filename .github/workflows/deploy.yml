@@ -64,7 +64,7 @@ jobs:
           host: ${{ secrets.DEV_HOST }}
           username: ${{ secrets.DEV_USER }}
           key: ${{ secrets.DEV_SSH_KEY }}
-          source: "docker-compose.yml"
+          source: "${{ github.workspace }}/docker-compose.yml"
           target: "~/app/frontend"
           strip_components: 5
           overwrite: true
